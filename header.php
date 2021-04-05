@@ -24,7 +24,7 @@
 <div>
 	<div id="mainmenuid1">
 	<div id="mmLboxid1">div</div>
-	   <div>
+	   <div id="coSiteNameID1">
 		   <h1>
 			<?php 
 					the_custom_logo();
