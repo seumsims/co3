@@ -7,6 +7,17 @@
  * @package CO_1
  */
 
+
+function register_my_menus() {
+	register_nav_menus(
+	  array(
+		'header-menu' => __( 'Header Menu' ),
+		'extra-menu' => __( 'Extra Menu' )
+	   )
+	 );
+   }
+   add_action( 'init', 'register_my_menus' );
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
