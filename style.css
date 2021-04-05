@@ -71,11 +71,33 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-size: 2em;
     
 }
-
+div#mainmenuid1 ul {
+    
+    margin: 0;
+    padding: 0;
+}
 .menu-main-menu-container ul li a {
     
     text-decoration: none;
+	color: #fdfbfc;
 }
+div#mainmenuid1 {
+    background: #00d0841f;
+}
+div#mainmenuid1 div {
+    display: inline-block;
+}
+
+div#mmLboxid1 {background: aqua;padding: 4% 3%;color: aqua; opacity: 0;}
+
+div#mmMidboxid1 {
+    background: bisque;
+    padding: 2% 4%;
+    color: bisque;
+	opacity: 0;
+}
+
+/**/
 
 html {
 	line-height: 1.15;

@@ -21,8 +21,35 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div>
+	<div id="mainmenuid1">
+	<div id="mmLboxid1">div</div>
+	   <div>
+		   <h1>
+			<?php 
+					the_custom_logo();
+					if ( is_front_page() && is_home() ) :
+						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+					else :
+						?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+					endif;
+					?>
+	     </div>
+		 </h1>
+	
+	
+		<div id="mmMidboxid1">div</div>
+		<div>
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+		</div>
+		<div id="mmRboxid1">div</div>
+	</div>
+</div>
 
-<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
