@@ -14,8 +14,12 @@
 
 get_header(); 
 ?>
-
-
+<?php get_template_part('post'); ?>
+<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>    
+	<!-- do stuff ... --> <?php the_content(); ?>
+	<?php endwhile; ?>
+<?php endif; ?>
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
